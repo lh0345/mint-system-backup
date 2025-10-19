@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Mint System Backup
+Comment=Create full backups of your Linux Mint system, configs, and apps.
+Exec=io.github.lh0345.MintSystemBackup
+Icon=io.github.lh0345.MintSystemBackup
+Categories=Utility;System;Backup;
+Terminal=false
+StartupNotify=true
+Keywords=Backup;Restore;Mint;System;Files;

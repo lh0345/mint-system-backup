@@ -1,0 +1,24 @@
+app-id: io.github.lh0345.MintSystemBackup
+runtime: org.freedesktop.Platform
+runtime-version: "24.08"
+sdk: org.freedesktop.Sdk
+command: mint-backup.sh
+
+finish-args:
+  - --share=network
+  - --socket=session-bus
+  - --socket=system-bus
+  - --filesystem=home
+  - --filesystem=host
+  - --device=all
+  - --talk-name=org.freedesktop.Flatpak
+  - --system-talk-name=org.freedesktop.PackageKit
+
+modules:
+  - name: mint-system-backup
+    buildsystem: simple
+    build-commands:
+      - install -D mint-backup.sh /app/bin/mint-backup.sh
+      - install -D MintBackup.desktop /app/share/applications/io.github.lh0345.MintSystemBackup.desktop
+      - install -D icons/mint-backup.png /app/share/icons/hicolor/128x128/apps/io.github.lh0345.MintSystemBackup.png
+      - install -D io.github.lh0345.MintSystemBackup.metainfo.xml /app/share/metainfo/io.github.lh0345.MintSystemBackup.metainfo.xml
