@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.lh0345.MintSystemBackup</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Mint System Backup</name>
+  <summary>One-click Linux Mint backup utility for apps, configs, and system data.</summary>
+  <description>
+    <p>Mint System Backup is a simple yet powerful utility that lets you back up your entire Linux Mint environment — apps, Flatpaks, Snaps, AppImages, configs, and themes — directly into your Documents folder. Designed for both native and Flatpak sandbox environments.</p>
+    <ul>
+      <li>Backup APT, Flatpak, Snap & AppImage apps</li>
+      <li>Save configs, icons, themes, and local data</li>
+      <li>Auto timestamped and logged backups</li>
+      <li>Runs in Flatpak sandbox with host bridging</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.github.lh0345.MintSystemBackup.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/lh0345/mint-system-backup/main/screenshots/main.png</image>
+      <caption>Main Interface</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/lh0345/mint-system-backup</url>
+  <url type="bugtracker">https://github.com/lh0345/mint-system-backup/issues</url>
+  <url type="donation">https://buymeacoffee.com/lh0345</url>
+  <content_rating type="oars-1.1"/>
+  <developer_name>Leart H.</developer_name>
+  <releases>
+    <release version="1.0" date="2025-10-20">
+      <description>
+        <p>Initial stable release of Mint System Backup.</p>
+      </description>
+    </release>
+  </releases>
+</component>
